@@ -61,6 +61,8 @@ sourcetype = bro_conn
   
 It is important that the index is set and the sourctype is set. The names can be changed but they need to match the names in the source code of the dashboard. Setting up the inputs.conf properly will ensure that all fields are indexed in Splunk properly and that the app works correctly. 
 
+The zeek.spl file can be uploaded into Splunk like any other app and will be ready to use. 
+
 
 
 
