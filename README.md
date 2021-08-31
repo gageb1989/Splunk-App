@@ -50,9 +50,13 @@ Correct setup is very important when using this app. When setting up the Splunk 
 
 EXAMPLE:
 [monitor:///nsm/bro/logs/current/conn.log]
+
 disabled = 0
+
 followTail = 0
+
 index = zeek
+
 sourcetype = bro_conn
   
 It is important that the index is set and the sourctype is set. The names can be changed but they need to match the names in the source code of the dashboard. Setting up the inputs.conf properly will ensure that all fields are indexed in Splunk properly and that the app works correctly. 
