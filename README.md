@@ -1,12 +1,19 @@
 # zeek-hunting
 This Splunk app Zeek_Hunting, is app that can be used to hunt for malicous activity in the Zeek logs. The app includes dashboards for the following Zeek logs:
-  - conn.log                  - smtp.log
-  - files.log                 - ssh.log
-  - http.log                  - rdp.log
-  - smb_files.log             - ntlm.log
-  - smb_mapping.log           - kerberos.log
-  - dns.log                   - ftp.log
-  
+  - conn.log                  
+  - files.log                 
+  - http.log                  
+  - smb_files.log             
+  - smb_mapping.log           
+  - dns.log                  
+  - smtp.log
+  - ssh.log
+  - rdp.log
+  - ntlm.log
+  - kerberos.log
+  - ftp.log
+
+
   ![search picture](https://github.com/gageb1989/Splunk-App/blob/main/pictures/files.PNG)
   
 ## USE
@@ -14,12 +21,12 @@ This app makes it easy to hunt in the Zeek logs using Splunk. Zeek logs are stor
 
 ![conn.log](https://github.com/gageb1989/Splunk-App/blob/main/pictures/conn.PNG)
 
-###Searching
+### Searching
 Using the search bar is the same as using the search bar on the main Splunk page. The feilds of the Zeek logs are renamed to make searching easier. For example, the source IP fields is named id.orig_h, which can be less efficient to type every time. That field was renamed to ip.src. This was done to also be the same is Wireshark filters, which more people are familiar with as well. The files.log in Zeek uses the rx_hosts for the source IP field making it more confusing for most. That was also renamed to ip.src as you can see in the picture below:
 
 ![fields picture](https://github.com/gageb1989/Splunk-App/blob/main/pictures/fields.PNG)
 
-###Logical Expressions
+### Logical Expressions
 All logical expressions that can be used in the main search bar can be used in the dashboards. 
 
 You can search for an IP in the source or destination field as shown below:
